@@ -76,8 +76,8 @@ export default function App() {
 	const currentQuiz = quizData[currentIndex];
 
 	return (
-		<div className="container mx-auto font-bold font-tamil flex flex-col items-center h-screen overflow-hidden">
-			<div className="space-y-16 flex flex-col items-center justify-center flex-1 w-full max-w-3xl pb-16">
+		<div className="  font-bold font-tamil flex flex-col items-center h-screen overflow-hidden">
+			<div className="space-y-16 flex flex-col items-center justify-center flex-1 w-full p-16">
 				{error && <p>{error.message}</p>}
 				<div className="space-y-8 w-full">
 					<QuestionCard quizData={currentQuiz} currentIndex={currentIndex} />

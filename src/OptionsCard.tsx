@@ -10,7 +10,7 @@ function OptionsCard({ quizData, revealAnswer }: OptionsCardProps) {
 	return (
 		<div
 			key={JSON.stringify(quizData.options)}
-			className="space-y-4 ml-16 w-full"
+			className="space-y-4 ml-32 w-full"
 		>
 			{Object.entries(quizData.options).map(([key, value], index) => (
 				<div
