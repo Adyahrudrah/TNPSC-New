@@ -6,7 +6,7 @@ interface QuestionCardProps {
 }
 function QuestionCard({ quizData, currentIndex }: QuestionCardProps) {
 	return (
-		<div className="text-5xl">
+		<div className="text-[clamp(1.5rem,5vw,4rem)]">
 			<p
 				key={currentIndex}
 				className="flex justify-start items-start gap-4 animate-stagger"
