@@ -15,7 +15,7 @@ function OptionsCard({ quizData, revealAnswer }: OptionsCardProps) {
 			{Object.entries(quizData.options).map(([key, value], index) => (
 				<div
 					key={key}
-					className="flex gap-4 text-3xl animate-stagger"
+					className="flex gap-4 text-[clamp(1.2rem,4vw,3rem)] animate-stagger"
 					style={{ animationDelay: `${index * 120}ms` }}
 				>
 					<span className="uppercase">({key})</span>
