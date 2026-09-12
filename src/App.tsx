@@ -78,6 +78,7 @@ export default function App() {
 	return (
 		<div className="container mx-auto font-bold font-tamil flex flex-col items-center h-screen overflow-hidden">
 			<div className="space-y-16 flex flex-col items-center justify-center flex-1 w-full max-w-3xl pb-16">
+				{error && <p>{error.message}</p>}
 				<div className="space-y-8 w-full">
 					<QuestionCard quizData={currentQuiz} currentIndex={currentIndex} />
 					<OptionsCard quizData={currentQuiz} revealAnswer={revealAnswer} />
